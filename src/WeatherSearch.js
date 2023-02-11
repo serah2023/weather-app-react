@@ -1,25 +1,23 @@
 import React from "react";
 
-
-
 export default function WeatherSearch() {
   return (
     <div className="container">
       <div className="weather-app-wrapper">
         <div className="weather-app">
           <div class="mb-3 top-links">
-            <a href="" className="p-3 ">
+            <a href="http://google.com" className="p-3 ">
               lisbon
             </a>
-            <a href="" className="p-3">
+            <a href="http://google.com" className="p-3">
               paris
             </a>
 
-            <a href="" className="p-3">
+            <a href="http://google.com" className="p-3">
               sydney
             </a>
 
-            <a href="" className="p-3">
+            <a href="http://google.com" className="p-3">
               italy
             </a>
           </div>
@@ -79,7 +77,11 @@ export default function WeatherSearch() {
                   <strong id="temperature">19</strong>
 
                   <span className="units">
-                    <a href="#" id="celsius-link" className="active">
+                    <a
+                      href="http://google.com"
+                      id="celsius-link"
+                      className="active"
+                    >
                       °C
                     </a>{" "}
                     |{/* <a href="#" id="Fahrenheit-link">°F</a> */}
@@ -195,10 +197,11 @@ export default function WeatherSearch() {
           <a
             href="https://github.com/serah2023/weather-app-react"
             target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>
-          , by <a href="#">sara zolfaghari</a>
+          , by sara zolfaghari
         </small>
       </div>
     </div>

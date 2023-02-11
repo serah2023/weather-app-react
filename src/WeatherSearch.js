@@ -192,13 +192,12 @@ export default function WeatherSearch() {
 
         <small>
           <a
-            href="https://github.com/wecodeschool/react-weather"
+            href="https://github.com/serah2023/weather-app-react"
             target="_blank"
           >
             Open-source code
           </a>
           , by <a href="#">sara zolfaghari</a>
-       
         </small>
       </div>
     </div>

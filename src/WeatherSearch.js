@@ -1,4 +1,5 @@
 import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherSearch() {
   return (
@@ -71,20 +72,29 @@ export default function WeatherSearch() {
           <div className="row">
             <div className="col-6">
               <div className="d-flex weather-temperature">
-                <img src="" alt=" sunny" id="icon" />
+                <div className="mt-4">
+                  <ReactAnimatedWeather
+                    icon="CLEAR_DAY"
+                    color="black"
+                    size={50}
+                    animate={true}
+                  />
+                </div>
 
                 <div>
-                  <strong id="temperature">19</strong>
+                  <strong id="temperature" >
+                    19
+                  </strong>
 
                   <span className="units">
                     <a
                       href="http://google.com"
                       id="celsius-link"
-                      className="active"
+                      class="active"
                     >
                       °C
-                    </a>{" "}
-                    |{/* <a href="#" id="Fahrenheit-link">°F</a> */}
+                    </a>
+                    |
                   </span>
                 </div>
               </div>
@@ -111,13 +121,17 @@ export default function WeatherSearch() {
                   <br />
 
                   <li>
-                    {" "}
-                    <span>
-                      {" "}
-                      <i className="fa-solid fa-sun "></i>{" "}
-                    </span>{" "}
+                    {/* <i className="fa-solid fa-sun "></i>{" "} */}
+                    <ReactAnimatedWeather
+                      icon="SNOW"
+                      color="black"
+                      size={64}
+                      animate={true}
+                    />
                   </li>
                   <br />
+                  <br />
+
                   <li> 9°</li>
                 </ul>
               </div>
@@ -131,10 +145,18 @@ export default function WeatherSearch() {
                     {" "}
                     <span>
                       {" "}
-                      <i className="fa-solid fa-sun "></i>
+                      {/* <i className="fa-solid fa-sun "></i> */}
+                      <ReactAnimatedWeather
+                        icon="CLOUDY"
+                        color="black"
+                        size={64}
+                        animate={true}
+                      />
                     </span>{" "}
                   </li>
                   <br />
+                  <br />
+
                   <li> 9°</li>
                 </ul>
               </div>
@@ -148,10 +170,18 @@ export default function WeatherSearch() {
                     {" "}
                     <span>
                       {" "}
-                      <i className="fa-solid fa-sun "></i>
+                      {/* <i className="fa-solid fa-sun "></i> */}
+                      <ReactAnimatedWeather
+                        icon="CLOUDY"
+                        color="black"
+                        size={64}
+                        animate={true}
+                      />
                     </span>{" "}
                   </li>
                   <br />
+                  <br />
+
                   <li> 9°</li>
                 </ul>
               </div>
@@ -165,10 +195,18 @@ export default function WeatherSearch() {
                     {" "}
                     <span>
                       {" "}
-                      <i className="fa-solid fa-sun "></i>
+                      {/* <i className="fa-solid fa-sun "></i> */}
+                      <ReactAnimatedWeather
+                        icon="CLOUDY"
+                        color="black"
+                        size={64}
+                        animate={true}
+                      />
                     </span>{" "}
                   </li>
                   <br />
+                  <br />
+
                   <li> 9°</li>
                 </ul>
               </div>
@@ -182,10 +220,18 @@ export default function WeatherSearch() {
                     {" "}
                     <span>
                       {" "}
-                      <i className="fa-solid fa-sun "></i>
+                      {/* <i className="fa-solid fa-sun "></i> */}
+                      <ReactAnimatedWeather
+                        icon="CLOUDY"
+                        color="black"
+                        size={64}
+                        animate={true}
+                      />
                     </span>{" "}
                   </li>
                   <br />
+                  <br />
+
                   <li> 9°</li>
                 </ul>
               </div>

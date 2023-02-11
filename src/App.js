@@ -6,8 +6,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> Hellooooo world</h1>
+        <h1>weather app</h1>
         <WeatherSearch city="paris" />
+        <p>
+        
+          <a href="https://github.com/serah2023/weather-app-react">
+            open source code
+          </a>
+          by sara zolfaghari;
+        </p>
       </header>
     </div>
   );

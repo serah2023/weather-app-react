@@ -1,19 +1,26 @@
-// import logo from './logo.svg';
-import './App.css';
-import WeatherSearch from './WeatherSearch';
+import "./App.css";
+import "./WeatherSearch.css";
 
-function App() {
+import "bootstrap/dist/css/bootstrap.css";
+import WeatherSearch from "./WeatherSearch";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
- <WeatherSearch />
-      </header>
+      <div className="container">
+        <WeatherSearch />
+        <footer>
+          This project is coded by sara zolfaghari and is
+          <a
+            href="https://github.com/serah2023/new-react-weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            open sourced
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
-
-
-

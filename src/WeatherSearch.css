@@ -1,0 +1,55 @@
+.WeatherSearch {
+  border: 2px solid #dadeda;
+  color: rgb(135, 135, 135);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.WeatherSearch .temperature {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+}
+
+.WeatherSearch .unit {
+  font-size: 16px;
+
+  line-height: 1;
+  top: -34px;
+  font-weight: 400;
+  color: rgb(33, 33, 33);
+  position: relative;
+  margin-left: 5px;
+}
+
+.WeatherSearch form {
+  margin-bottom: 20px;
+} 
+
+.WeatherSearch h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+  margin: 20px 0 0 0;
+}
+
+.WeatherSearch ul {
+  margin: 0;
+  padding: 0;
+}
+.WeatherSearch li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+.WeatherSearch  h1{
+ 
+  color: #7c7c7c;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+}

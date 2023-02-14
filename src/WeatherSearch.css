@@ -6,10 +6,10 @@
 }
 
 .WeatherSearch .temperature {
-  font-size: 64px;
+  font-size: 46px;
   font-weight: bold;
   line-height: 64px;
-  font-weight: 400;
+  font-weight: 300;
   color: rgb(33, 33, 33);
 }
 
@@ -53,3 +53,4 @@
   line-height: 28px;
   margin: 0;
 }
+

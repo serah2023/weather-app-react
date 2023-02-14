@@ -14,12 +14,15 @@ let [weatherData, setWeatherData]=useState({ready:false })
 
   function handleResponse(response){
     // console.log(response.data)
+      console.log(response.data.time);
+
 
       setWeatherData({
         ready: true,
         temperature: response.data.temperature.current,
         humidity: response.data.temperature.humidity,
         date: new Date(response.data.time *1000),
+        
         description: response.data.condition.description,
         iconUrl: "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png",
         wind: response.data.wind.speed,
@@ -59,7 +62,8 @@ let [weatherData, setWeatherData]=useState({ready:false })
            <ul>
            
              <li>
-               <FormattedDate date={weatherData.date.getDay()} />
+              {/* {weatherData.date.getDay()} */}
+               <FormattedDate date={weatherData.date} />
              </li>
 
              <li className="text-capitalize">{weatherData.description}</li>

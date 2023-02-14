@@ -1,22 +1,29 @@
-import React from "react"
+import React from "react";
 
+export default function FormattedDate(props) {
+  console.log(props.date);
+  //  let day=props.date.getDay();
 
-export default function FormattedDate(props)
-{
-  let days = ["sunday", "monday", "tuesday", "wednesday", "thursday" , "friday"];
+  let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday"];
 
-  let day=days[props.date.getDay()];
-  let hours=props.date.getHours();
+  let day = days[props.date.getDay()];
 
-  if (hours<10)
-   {hours = `0${hours}`;}
+  // return `${day} 12:00`;
 
-  let minute=props.getMinutes();
+  let hours = props.date.getHours();
 
-  if (minute < 10)
-      minute= `0${hours}`;
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 
-//   console.log(props.date);
+  // return `${day} ${hours}:00`;
+
+  let minute = props.date.getMinutes();
+
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+
   return (
     <div>
       {" "}
@@ -24,9 +31,3 @@ export default function FormattedDate(props)
     </div>
   );
 }
-
-
-
-
- 
-

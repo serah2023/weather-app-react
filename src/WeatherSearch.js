@@ -10,8 +10,8 @@ export default function WeatherSearch(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    // console.log(response.data)
-    console.log(response.data.time);
+    console.log(response.data)
+    // console.log(response.data.time);
 
     setWeatherData({
       ready: true,
@@ -20,7 +20,7 @@ export default function WeatherSearch(props) {
       date: new Date(response.data.time * 1000),
 
       description: response.data.condition.description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png",
+      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       wind: response.data.wind.speed,
       city: response.data.city,
     });

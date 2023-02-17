@@ -7,15 +7,15 @@
 
 .WeatherSearch .temperature {
   font-size: 46px;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 64px;
-  font-weight: 300;
+  font-weight: 500;
   color: rgb(33, 33, 33);
+  
 }
 
 .WeatherSearch .unit {
   font-size: 16px;
-
   line-height: 1;
   top: -34px;
   font-weight: 400;

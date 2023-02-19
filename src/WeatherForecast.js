@@ -20,45 +20,25 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
         <div className="row">
-          <div className="col">
-            <WeatherForecastDay  data={forecast[0]}  />
-          </div>
 
-          <div className="col">
-            <div className="WeatherForecast-day"> thu </div>
-            <WeatherIcon code="clear-sky-day" size={36} />
-            <div className="WeatherForecast-temperature">
-              <span className="WeatherForecast-temperature-max">19° </span>
-              <span className="WeatherForecast-temperature-min">10° </span>
-            </div>
-          </div>
+{forecast.map(function(dailyForecast , index)  {
 
-          <div className="col">
-            <div className="WeatherForecast-day"> thu </div>
-            <WeatherIcon code="clear-sky-day" size={36} />
-            <div className="WeatherForecast-temperature">
-              <span className="WeatherForecast-temperature-max">19° </span>
-              <span className="WeatherForecast-temperature-min">10° </span>
-            </div>
-          </div>
+  if(index<5){
 
-          <div className="col">
-            <div className="WeatherForecast-day"> thu </div>
-            <WeatherIcon code="clear-sky-day" size={36} />
-            <div className="WeatherForecast-temperature">
-              <span className="WeatherForecast-temperature-max">19° </span>
-              <span className="WeatherForecast-temperature-min">10° </span>
-            </div>
-          </div>
+return (
+  <div className="col" key={index}>
+    <WeatherForecastDay data={dailyForecast} />
+  </div>
+);
+  }
 
-          <div className="col">
-            <div className="WeatherForecast-day"> thu </div>
-            <WeatherIcon code="clear-sky-day" size={36} />
-            <div className="WeatherForecast-temperature">
-              <span className="WeatherForecast-temperature-max">19° </span>
-              <span className="WeatherForecast-temperature-min">10° </span>
-            </div>
-          </div>
+
+})}
+
+
+       
+
+            
         </div>
       </div>
     );

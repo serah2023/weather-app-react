@@ -11,11 +11,15 @@ export default function WeatherSearch(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data)
+    // console.log(response.data)
     // console.log(response.data.time);
 
+    // console.log(response.data)
     setWeatherData({
       ready: true,
+      coords:response.data.coordinates,
+
+
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
@@ -69,7 +73,7 @@ export default function WeatherSearch(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast  />
+        <WeatherForecast coords={weatherData.coords} />
       </div>
     );
   } else {

@@ -17,9 +17,21 @@
 }
 
 
+.App .weather-temperature canvas{
+
+    margin-right:5px ;
+    height: 64px;
+    width: 64px;
+    margin-top: 15px;
+}
 
 
-
+.App .weather-temperature strong {
+    color: rgb(33,33,33);
+    font-size: 64px;
+    line-height: 20px; 
+     font-weight: 800px;
+    }
 
 
 
@@ -32,12 +44,7 @@
     text-align: left;
 }
 
-.App .weather-temperature img{
 
-    margin-right:5px ;
-    height: 64px;
-    width: 64px;
-}
 
 .App .weather-temperature strong {
     color: rgb(33,33,33);

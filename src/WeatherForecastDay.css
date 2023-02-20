@@ -1,0 +1,9 @@
+      
+.WeatherForecastDay .WeatherForecast-temperature  {
+    color: #f65282;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+}
+      

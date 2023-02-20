@@ -46,12 +46,6 @@
 
 
 
-.App .weather-temperature strong {
-    color: rgb(33,33,33);
-    font-size: 64px;
-    /* line-height: 1px; */
-    /* font-weight: 800px;
-}
 
 .App .weather-temperature .units{
     position: relative;
@@ -69,4 +63,7 @@
     text-decoration: none;
 } */ 
 
+.App footer a {
+    color: #885df1;
+}
 

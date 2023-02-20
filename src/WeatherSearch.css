@@ -6,7 +6,7 @@
 }
 
 .WeatherSearch .temperature {
-  font-size: 49px;
+  font-size: 64px;
   /* font-weight: bold; */
   line-height: 54px;
   font-weight: 500;
@@ -45,6 +45,9 @@
   line-height: 19px;
   list-style: none;
 }
+
+
+
 .WeatherSearch  h1{
  
   color: #7c7c7c;
@@ -54,3 +57,24 @@
   margin: 0;
 }
 
+.WeatherSearch .btn {
+    background: #885df1;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    padding: 15px 0;
+}
+
+
+.WeatherSearch .form-control {
+    background: #f9f7fe;
+    border: none;
+    border-radius: 6px;
+    color: rgba(39,33,66,.4);
+    display: inline-block;
+    font-size: 16px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px 20px;
+}

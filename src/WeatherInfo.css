@@ -1,0 +1,14 @@
+.WeatherInfo h1{
+
+    color: #272142;
+    font-size: 38px;
+    font-weight: 500;
+    /* line-height: 29px; */
+    /* line-height: 48px; */
+    margin: 10px 0 10px;
+}
+
+.WeatherInfo  li strong {
+    color: #f65282;
+    font-weight: 400;
+}

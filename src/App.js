@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <WeatherSearch defaultCity="Paris"  />
+        <WeatherSearch defaultCity="Paris" />
         <footer>
           This project is coded by sara zolfaghari and is
           <a
@@ -19,10 +19,11 @@ export default function App() {
             {" "}
             open sourced on GitHub
           </a>
-
-          and 
-          
-          <a href="http:www.netlify.com"> hosted on netlify</a>
+          and
+          <a href="https://spectacular-crostata-cb947d.netlify.app/">
+            {" "}
+            hosted on netlify
+          </a>
         </footer>
       </div>
     </div>
